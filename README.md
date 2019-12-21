@@ -24,4 +24,4 @@ To generate a prod-style build that should be easier to deploy to your CDN or cl
 
 `npm run build`
 
-And check the `dist` folder. You can drag and drop this to netlify, for example
+And check the `build` folder. You can drag and drop this to netlify, for example

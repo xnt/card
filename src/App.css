@@ -22,6 +22,9 @@
   transition: opacity 1s, transform 1s;
 }
 #back-container {
+  background-image: url("xmastreebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: #333 2px solid;
   box-shadow: 10px 9px 16px -5px rgba(26, 25, 25, 1);
   height: 760px;
