@@ -28,10 +28,13 @@ export default class CardContainer extends PureComponent {
     const { lang, to } = this;
     const { showBack, showFront } = this.state;
     return (
-      <Container className="flipContainer" onClick={this.flipCard.bind(this)}>
-        <CardFront lang={lang} imageUrl={constants.imageUrl} show={showFront} to={to} />
-        <CardBack lang={lang} show={showBack} to={to} />
-      </Container>
+      <>
+        <h1>¡Felices Fiestas 🎄🎅!</h1>
+        <Container className="flipContainer" onClick={this.flipCard.bind(this)}>
+          <CardFront lang={lang} imageUrl={constants.imageUrl} show={showFront} to={to} />
+          <CardBack lang={lang} show={showBack} to={to} />
+        </Container>
+      </>
     );
   }
 }

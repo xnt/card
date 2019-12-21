@@ -23,11 +23,11 @@ export default class CardFront extends Component {
     return (
       <Row className={displayClass}>
         <Col>
-          <img alt="Card" className="m-2" src={imageUrl} id="frontCardImage" />
           <div className="festive p-2" id="frontCardText">
-            <h1>{constants.formattedText(constants.frontTitle, lang, to)}</h1>
+            <h3>{constants.formattedText(constants.frontTitle, lang, to)}</h3>
             <p>{constants.frontMessage[lang]}</p>
           </div>
+          <img alt="Card" className="m-2" src={imageUrl} id="frontCardImage" />
         </Col>
       </Row>
     );

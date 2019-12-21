@@ -1,5 +1,6 @@
 #frontCardImage {
   border: #333 2px solid;
+  box-shadow: 10px 9px 16px -5px rgba(26, 25, 25, 1);
   position: absolute;
   width: 100%;
   z-index: 0;
@@ -14,18 +15,18 @@
   opacity: 0;
   transform: rotateY(180deg);
   transition: opacity 1s, transform 1s;
-  /*transition: transform 2s ease-in;*/
 }
 .not-flipped {
   opacity: 1;
   transform: rotateY(0deg);
   transition: opacity 1s, transform 1s;
-  /*transform: rotateY(180deg);*/
 }
 #back-container {
   border: #333 2px solid;
+  box-shadow: 10px 9px 16px -5px rgba(26, 25, 25, 1);
+  height: 760px;
+  min-height: 760px;
 }
-
 #frontCardText {
   background-color: #d3a273;
   border: #c43637 double thick;
@@ -35,7 +36,34 @@
   top: 50px;
   z-index: 1;
 }
-
 .festive {
   font-family: "Mountains of Christmas", cursive;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.25em;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    min-height: 50%;
+  }
+  #frontCardImage {
+    position: initial;
+    width: 95%;
+  }
+  #frontCardText {
+    margin-right: 5px;
+    position: initial;
+    width: 100%;
+  }
+  .row {
+    position: absolute;
+    top: 0px;
+  }
+  #back-container {
+    min-height: initial;
+    height: initial;
+  }
 }

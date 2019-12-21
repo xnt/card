@@ -19,7 +19,8 @@ export default class CardBack extends PureComponent {
         <Col>
           <div className="m-2 p-3" id="back-container">
             <h2 className="festive">{constants.formattedText(constants.backTitle, lang, to)}</h2>
-            <p>{constants.backMessage1[lang]}</p>
+            <p className="mt-4">{constants.backMessage1[lang]}</p>
+            <p>{constants.backMessage2[lang]}</p>
           </div>
         </Col>
       </Row>

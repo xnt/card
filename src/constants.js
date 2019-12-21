@@ -15,8 +15,8 @@ const backMessage1 = {
 };
 
 const backMessage2 = {
-  en: `May you have `,
-  es: `Yadda yadda`,
+  en: `We would like to extend our best wishes in this holiday season, and lots of success and accomplishments for 2020.`,
+  es: `Nuestros mejores deseos en estas fiestas decembrinas, y todo el éxito del mundo para 2020.`,
 };
 
 const frontTitle = {
@@ -31,6 +31,7 @@ const frontMessage = {
 
 export default {
   backMessage1,
+  backMessage2,
   backTitle,
   formattedText,
   frontMessage,
