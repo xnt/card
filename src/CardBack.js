@@ -21,6 +21,11 @@ export default class CardBack extends PureComponent {
             <h2 className="festive">{constants.formattedText(constants.backTitle, lang, to)}</h2>
             <p className="mt-4">{constants.backMessage1[lang]}</p>
             <p>{constants.backMessage2[lang]}</p>
+            <footer>
+              <span aria-label="Signature emojis" role="img">
+                👨‍💻 🌮 📚 🐻 🐶
+              </span>
+            </footer>
           </div>
         </Col>
       </Row>

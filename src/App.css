@@ -63,6 +63,7 @@ h1 {
     top: 0px;
   }
   #back-container {
+    margin-left: 0 !important;
     min-height: initial;
     height: initial;
   }
