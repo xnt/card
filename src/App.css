@@ -39,10 +39,19 @@
 .festive {
   font-family: "Mountains of Christmas", cursive;
 }
+.hint {
+  text-align: center;
+}
 h1 {
   font-size: 2rem;
   text-align: center;
   margin: 0.25em;
+}
+h3 {
+  margin-bottom: 12px;
+}
+p {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1024px) {
