@@ -36,13 +36,19 @@ export default class CardContainer extends PureComponent {
           </span>
           !
         </h1>
-        <div class="hint">
+        <div className="hint">
           <small>[Click/Tap!]</small>
         </div>
         <Container className="flipContainer" onClick={this.flipCard.bind(this)}>
           <CardFront lang={lang} imageUrl={constants.imageUrl} show={showFront} to={to} />
           <CardBack lang={lang} show={showBack} to={to} />
         </Container>
+
+        <footer className="code">
+          <a href="https://github.com/xnt/card" target="_blank" rel="noopener noreferrer">
+            Code
+          </a>
+        </footer>
       </>
     );
   }
