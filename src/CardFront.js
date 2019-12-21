@@ -2,21 +2,31 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import constants from "./constants";
 
 export default class CardFront extends Component {
   static propTypes = {
-    imageUrl: PropTypes.string,
+    lang: PropTypes.oneOf(["en", "es"]),
+    imageUrl: PropTypes.string.isRequired,
+    show: PropTypes.bool,
+    to: PropTypes.string,
+  };
+
+  static defaultProps = {
+    lang: "en",
+    to: "Friend",
   };
 
   render() {
-    const { imageUrl } = this.props;
+    const { lang, imageUrl, show, to } = this.props;
+    const displayClass = show ? "not-flipped" : "flipped";
     return (
-      <Row>
+      <Row className={displayClass}>
         <Col>
-          <img alt="Card" className="m-2" src={imageUrl} id="cardImage" />
-          <div className="festive p-2" id="cardText">
-            <h1>Happy Holidays</h1>
-            <p>From the Plata-Reveles Family</p>
+          <img alt="Card" className="m-2" src={imageUrl} id="frontCardImage" />
+          <div className="festive p-2" id="frontCardText">
+            <h1>{constants.formattedText(constants.frontTitle, lang, to)}</h1>
+            <p>{constants.frontMessage[lang]}</p>
           </div>
         </Col>
       </Row>

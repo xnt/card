@@ -1,10 +1,32 @@
-#cardImage {
+#frontCardImage {
+  border: #333 2px solid;
   position: absolute;
   width: 100%;
   z-index: 0;
 }
+.flipContainer {
+  perspective: 1000px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flipped {
+  backface-visibility: hidden;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: opacity 1s, transform 1s;
+  /*transition: transform 2s ease-in;*/
+}
+.not-flipped {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: opacity 1s, transform 1s;
+  /*transform: rotateY(180deg);*/
+}
+#back-container {
+  border: #333 2px solid;
+}
 
-#cardText {
+#frontCardText {
   background-color: #d3a273;
   border: #c43637 double thick;
   float: right;
