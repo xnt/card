@@ -8,8 +8,8 @@ export default class CardContainer extends PureComponent {
   constructor(props) {
     super(props);
     this.searchParams = new URL(window.location).searchParams;
-    this.lang = this.searchParams.get("lang");
-    this.to = this.searchParams.get("to");
+    this.lang = this.searchParams.get("lang") || "en";
+    this.to = this.searchParams.get("to") || "friend";
     this.state = {
       showBack: false,
       showFront: true,
