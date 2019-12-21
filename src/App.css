@@ -5,7 +5,8 @@
 }
 
 #cardText {
-  background-color: #dcb48f;
+  background-color: #d3a273;
+  border: #c43637 double thick;
   float: right;
   position: absolute;
   right: 15px;
