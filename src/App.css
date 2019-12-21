@@ -1,3 +1,18 @@
 #cardImage {
+  position: absolute;
   width: 100%;
+  z-index: 0;
+}
+
+#cardText {
+  background-color: #dcb48f;
+  float: right;
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  z-index: 1;
+}
+
+.festive {
+  font-family: "Mountains of Christmas", cursive;
 }

@@ -13,7 +13,11 @@ export default class CardFront extends Component {
     return (
       <Row>
         <Col>
-          <img alt="Card" src={imageUrl} id="cardImage" />
+          <img alt="Card" className="m-2" src={imageUrl} id="cardImage" />
+          <div className="festive p-2" id="cardText">
+            <h1>Happy Holidays</h1>
+            <p>From the Plata-Reveles Family</p>
+          </div>
         </Col>
       </Row>
     );
